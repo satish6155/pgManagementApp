@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/etPgName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="PG Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+            android:id="@+id/etPgCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="PG Code"
+            android:inputType="text|textPersonName" />
+
+        <TextView
+            android:id="@+id/address_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="Address Line 1"
+            android:inputType="textPostalAddress" />
+
+        <TextView
+            android:id="@+id/address_line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="Address Line 2"
+            android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/zipCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ZipCode"
+                android:inputType="textPersonName|number" />
+
+
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="City"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="State"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="Country"
+            android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="50dp"
+            android:text="Add Room(s)" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button"
+            android:text="        Back        " />
+
+        <Button
+            android:id="@+id/editPg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/back"
+            android:layout_alignStart="@+id/back"
+            android:layout_marginBottom="13dp"
+            android:text="Edit Details" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editPg"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignStart="@+id/button"
+            android:text="Add User" />
+    </RelativeLayout>

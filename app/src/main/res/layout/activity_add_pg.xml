@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Add New PG" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="username" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+
+
+            <EditText
+                android:id="@+id/etPgCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="PG Code"
+                android:inputType="text|textPersonName" />
+
+            <EditText
+                android:id="@+id/etPgName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="PG Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/address_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Address Line 1"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/address_line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Address Line 2"
+                android:inputType="textPostalAddress" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/zipCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ZipCode"
+                    android:inputType="textPersonName|number" />
+
+                <Button
+                    android:id="@+id/verifyZipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Verify" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="City"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="State"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Country"
+                android:inputType="textPersonName" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_addPg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:text="Add PG"
+                android:textColor="@color/black" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:text="CANCEL"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="12dp">
+
+
+
+
+        </LinearLayout>-->
+
+
+
+    </RelativeLayout>

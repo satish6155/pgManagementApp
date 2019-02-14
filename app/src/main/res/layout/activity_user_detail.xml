@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="LoggedUser" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="username"
+                android:inputType="textUri" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Password"
+                android:inputType="textVisiblePassword" />
+
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Mobile"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/address_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Address Line 1"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/address_line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Address Line 2"
+                android:inputType="textPostalAddress" />
+
+
+                <TextView
+                    android:id="@+id/zipCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ZipCode"
+                    android:inputType="textPersonName|number" />
+
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="City"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="State"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Country"
+                android:inputType="textPersonName" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="        Back        " />
+
+    <Button
+        android:id="@+id/editUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="13dp"
+        android:text="Edit Details" />
+
+    <Button
+        android:id="@+id/assignPg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assigne PG"
+        android:layout_alignBaseline="@+id/editUser"
+        android:layout_alignBottom="@+id/editUser"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

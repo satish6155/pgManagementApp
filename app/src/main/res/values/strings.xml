@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PG Admin</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="base_URL">http://192.168.225.41:8080/SpringRestHibernate</string>
+</resources>

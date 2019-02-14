@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#d2c2ff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl11"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#b2c2f0">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:hint="PG Name"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="?attr/colorAccent"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/headRooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/role"
+            android:layout_marginRight="7dp"
+            android:layout_toStartOf="@+id/role"
+            android:text="Expires On  :"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="?attr/colorAccent"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="7dp"
+            android:hint="Never"
+            android:textColor="@android:color/background_light"
+            android:textSize="17dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl13"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#b2c2f0">
+
+        <TextView
+            android:id="@+id/mobileHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:text="Adress"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/mobileHead"
+            android:hint="abc"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="?attr/colorAccent"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/roomHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/nextDueDate"
+            android:text="Total Rooms  : "
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/nextDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:hint="00"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="?attr/colorAccent"
+            android:textSize="17dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>
